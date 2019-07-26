@@ -13,7 +13,6 @@
                             Kai-Christian Schrum
                         </h2>
                         <p class="portrait-subtitle">Finanzberater</p>
-
                         <p class="portrait-slogan">Anlegen, versichern, finanzieren - Ihr unabhängiger Finanzoptimierer</p>
                     </div>
                 </div>
@@ -50,25 +49,32 @@
 </script>
 
 <style scoped>
+    @media screen and (min-width: 680px ) {
+        .portrait-bg {
+            border-radius: 2%;
+        }
 
-    @media screen and (max-width: 680px ) {
-        .portrait-height {
-            margin-bottom: 20px;
+        .portrait-header {
+            border-radius: 2%;
         }
     }
 
     .portrait-bg {
-        border-radius: 2%;
+        max-width: 500px;
+        max-height: 615px;
+    }
+
+    .portrait-height {
+        margin-bottom: 20px;
+    }
+    .portrait-bg {
         background-color: white;
         z-index: 1;
     }
 
     .portrait-container {
         position: relative;
-    }
-
-    .portrait-header {
-        border-radius: 2%;
+        min-width: 320px;
     }
 
     .portrait-height {
@@ -93,8 +99,8 @@
     }
 
     .portrait-slogan {
-        font-family: 'Poppins', sans-serif;
         font-size: .9rem;
+        margin: 0 5px;
     }
 
     .portrait-slogan:before {

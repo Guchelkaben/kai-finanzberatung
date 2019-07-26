@@ -1,7 +1,7 @@
 <template>
     <div class="page container">
-        <div class="d-flex justify-content-center">
-            <Portrait/>
+        <div class="page-wrapper">
+            <Portrait />
             <Details />
         </div>
     </div>
@@ -24,6 +24,7 @@
 <style>
     body {
         background-color: #003366;
+        font-family: 'Poppins', sans-serif;
     }
 
     @media screen and (max-width: 680px ) {
@@ -32,7 +33,26 @@
         }
     }
 
+    @media screen and (min-width: 1000px ) {
+        .container {
+            padding: 0;
+        }
+
+        .page-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
     .page {
-        max-width: 600px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 </style>
